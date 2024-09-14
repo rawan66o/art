@@ -1,0 +1,98 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #040303;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  margin-left: 26px;
+  font-weight: bold;
+  color: #a86464;
+  font-family: "Font Awesome 5 Free";
+  font-size: 40px;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+}
+.header-nav .header-option {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.header-nav .header-option:hover {
+  color: #a86464;
+}
+.header-optionLineOne {
+  font-size: 14px;
+}
+.header-optionLineTwo {
+  font-size: 18px;
+  font-weight: 800;
+}
+.header-optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.header-optionBasket .header-basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1229px) {
+  .header-optionLineOne {
+    display: none;
+  }
+
+  .header .header-nav {
+    flex-basis: 35px;
+    background-color: #0e0a00cf;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: -330%;
+    left: 32px;
+    opacity: 0.9;
+    transition: 0.3s ease;
+    padding: 25px;
+  }
+  .header .header-nav span {
+    color: white;
+  }
+
+  .header .header-nav ul {
+    padding-left: 0;
+  }
+
+  .header .header-nav ul span {
+    color: #a86464;
+  }
+  .header .naving {
+    display: block;
+    color: white;
+    margin-right: 26px;
+  }
+
+  .header .header-nav a {
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+
+  .header .cart-button {
+    margin-top: 11px;
+  }
+}
+
+.naving {
+  display: none;
+  color: white;
+}

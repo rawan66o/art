@@ -1,0 +1,61 @@
+.features {
+  background-color: #e8d5c4;
+  margin-bottom: 55px;
+}
+.features .content {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+.why-icon {
+  font-size: 30px;
+  color: #a86464;
+}
+.features .feat {
+  padding: 20px;
+  text-align: center;
+}
+.features .feat i {
+  color: yellow;
+}
+.features .feat h3 {
+  font-weight: 800;
+  margin: 30px 0;
+  color: #a86464;
+}
+.features .feat p {
+  line-height: 1.8;
+  color: black;
+  font-size: 17px;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    grid-template-columns: repeat(1, 2fr);
+
+    flex-wrap: wrap;
+  }
+
+  .feat {
+    padding: 1.5rem;
+  }
+  .why-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feat {
+    padding: 1rem;
+  }
+  .why-icon {
+    font-size: 1rem;
+  }
+}
